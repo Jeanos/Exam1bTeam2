@@ -4,8 +4,16 @@ import styles from '../styles/rightStyles';
 
 
 function Right(){
-    const statetrue = true;
-    const statefalse = false;
+    
+    const [ChangeMode, setChangeMode] = useState(true);
+
+    var modeStyle = null;
+    var textStyle = null;
+
+    if(ChangeMode === true){
+        modeStyle = null;
+        textStyle = null;
+    }
 
     
 
@@ -13,16 +21,10 @@ function Right(){
         <View style={styles.container}>
             <Text> Normal </Text>
             <Switch
-            value = {statetrue}/>
-            <Text> Wide </Text>
-            <Switch 
-            value = {statefalse}/>
-            <Text> Wider </Text>
-            <Switch
-            value = {statefalse}/>
-            <Text> Widest </Text>
-            <Switch
-            value = {statefalse}/>
+            value ={ChangeMode}
+            onValueChange={()=>{
+                setChangeMode(!ChangeMode);
+            }}/>
 
         </View>
     )
