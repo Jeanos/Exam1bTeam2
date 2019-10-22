@@ -9,6 +9,7 @@ var styles = StyleSheet.create({
         textAlign: "center",
     },
     toastView:{
+        
         bottom: 0
     }
 })
