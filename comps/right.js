@@ -14,6 +14,7 @@ function Right(){
 
     if(ChangeMode === false){
         modeStyle = [styles.container,{marginLeft:"75%"}];
+        
     }
 
     if(ChangeWide === true){
@@ -36,6 +37,9 @@ function Right(){
             value ={ChangeMode}
             onValueChange={()=>{
                 setChangeMode(!ChangeMode);
+                setChangeWide(ChangeWider === true);
+                setChangeWider(ChangeWider === true);
+                setChangeWidest(ChangeWider === true);
             }}
         />
             <Text> Wide </Text>
@@ -43,6 +47,9 @@ function Right(){
             value ={ChangeWide}
             onValueChange={()=>{
                 setChangeWide(!ChangeWide);
+                setChangeMode(ChangeMode === false);
+                setChangeWider(ChangeWider === true);
+                setChangeWidest(ChangeWider === true);
             }}
         />
         <Text> Wider </Text>
@@ -50,6 +57,9 @@ function Right(){
             value ={ChangeWider}
             onValueChange={()=>{
                 setChangeWider(!ChangeWider);
+                setChangeMode(ChangeMode === false);
+                setChangeWide(ChangeWider === true);
+                setChangeWidest(ChangeWider === true);
             }}
         />
             <Text> Widest </Text>
@@ -57,6 +67,9 @@ function Right(){
             value ={ChangeWidest}
             onValueChange={()=>{
                 setChangeWidest(!ChangeWidest);
+                setChangeMode(ChangeMode === false);
+                setChangeWide(ChangeWide === true);
+                setChangeWider(ChangeWider === true);
             }}
         />
 
