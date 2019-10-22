@@ -3,9 +3,11 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
 container: {
 
-    backgroundColor: "purple",
-    marginLeft: "70%",
-    height: "100%"
+    backgroundColor: "lightpink",
+    marginLeft: "75%",
+    height: "100%",
+    alignItems: "center",
+    justifyContent: "center"
 }
 
 
