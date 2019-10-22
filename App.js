@@ -9,9 +9,7 @@
 
 import React from 'react';
 import {View,Text} from 'react-native';
-import Main from './comps/main'
-
-
+import Main from './comps/main';
 
 function App(){
   return(
