@@ -8,7 +8,16 @@ container: {
     height: "100%",
     alignItems: "center",
     justifyContent: "center"
+},
+container2: {
+
+    backgroundColor: "lightpink",
+    marginLeft: "50%",
+    height: "100%",
+    alignItems: "center",
+    justifyContent: "center"
 }
+
 
 
 
