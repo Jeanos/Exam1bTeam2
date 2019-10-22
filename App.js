@@ -6,16 +6,16 @@
  * @flow
  */
 
+
 import React from 'react';
 import {View,Text} from 'react-native';
-import mainStyle from './styles/mainStyle';
 import Main from './comps/main'
 
 
 
-function App() {
-  return (
-    <View style={mainStyle.comp}>
+function App(){
+  return(
+    <View style={{flex:1}}>
       <Main />
     </View>
   );

@@ -1,13 +1,11 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import Left from '../comps/Left'
+import Left from './Left'
 
 function Main(){
     return(
         <View>
           <Left/>
-  
-    
         </View>
     );
 }
