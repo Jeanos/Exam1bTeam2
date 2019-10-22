@@ -7,14 +7,17 @@ import {
 import styles from '../styles/toastStyles';
 
 function Toast() {
-    var txt = (
-    <Text>Toast</Text>
-    )
-    if (txt="Toast"){
+    const [showToast, setShowToast] = useState("Toast");
+    // var txt = "Toast"
+    if (showToast == "Toast"){
         <View>
             <TouchableOpacity>
                 <Text
-                onPress={txt = "You've moved the Toast up"}>
+                // onPress={txt = "You've moved the Toast up"}
+                onPress={()=>{
+                    setShowToast("You've moved the Toast Up")
+                }}
+                >
                 </Text>
             </TouchableOpacity>
         </View>
@@ -23,7 +26,7 @@ function Toast() {
     <View styles={styles.toastView}>
         <TouchableOpacity> 
             <Text style={styles.toasty}>
-            {txt}
+                {showToast}
                  </Text>
                  </TouchableOpacity>
 
