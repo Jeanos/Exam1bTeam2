@@ -8,13 +8,13 @@
 
 import React from 'react';
 import {View,Text} from 'react-native';
-import mainStyle from './styles/mainStyle';
+import Toast from './comps/toast';
 
 
 function App() {
   return (
-    <View style={mainStyle.comp}>
-      <Text>App Goes Here</Text>
+    <View>
+      <Toast/>
     </View>
   );
 }
