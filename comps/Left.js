@@ -16,28 +16,49 @@ function Left() {
   const [showText, setShowText] = useState(false);
   var newValue = null;
   var newText = null;
+  var BtnSetImage = (
+    <Button
+        title="Set an Image"
+        onPress = {() => {
+          setShowText(!showText);
+          }}
+      />
+  );
 
+  
   if (showText === true){
-    newText = (
-      <View>
-        <ImageBackground source={require('../images/Bg.jpg')} style={leftStyle.image} >
-            <Text>Your Image URL is: {value}</Text>
-        </ImageBackground>
-        
-      </View>
-    )
+    if (newText == ''){
+      newText = (
+        <View>
+              <Text>Do not leave it Blank</Text>
+        </View>
+      )
+    }else{
+      newText = (
+        <View>
+          <ImageBackground source={require('../images/Bg.jpg')} style={leftStyle.image} >
+              <Text>Your Image URL is: {value}</Text>
+          </ImageBackground>
+          
+        </View>
+      )
+      BtnSetImage = (
+        <Button
+            title="Reset Image"
+            onPress = {() => {
+              setShowText(!showText);
+              }}
+          />
+      )
+    }
+   
   }
 
   
  
   return (
     <View style={leftStyle.app}>
-       <Button
-          title="Set an Image"
-          onPress = {() => {
-            setShowText(!showText);
-            }}
-        />
+        {BtnSetImage}
         {newText}
         <TextInput
           style={{ width: '100%', borderColor: 'gray', borderWidth: 1, color:'Blackew'}}
