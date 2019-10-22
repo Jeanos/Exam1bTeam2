@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import  Right from './right';
+import Left from './Left'
 
 function Main(){
     return(
-        <View style={{flex:1}}>
-            <Right />
+        <View>
+          <Left/>
         </View>
     );
 }
