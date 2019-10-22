@@ -7,29 +7,24 @@ import {
 import styles from '../styles/toastStyles';
 
 function Toast() {
-    const [mytoast, setMytoast] = useState("Toast");
-    var toast = null
-    if (mytoast == true){
-        toast =
+    var txt = ""
+    if (txt="Toast"){
         <View>
-            <TouchableOpacity
-            onPress={()=>{this.setState({text:"You've moved the Toast down"})
-
-            }}
-            >
-                <Text style={styles.toasty}
-                value={mytoast}>
+            <TouchableOpacity>
+                <Text
+                onPress={txt = "You've moved the Toast up"}>
                 </Text>
             </TouchableOpacity>
         </View>
     }
     return (
-    <View>
+    <View styles={styles.toastView}>
         <TouchableOpacity> 
-            <Text style={styles.toasty}
-            value={mytoast}>
+            <Text style={styles.toasty}>
+            {txt}
                  </Text>
                  </TouchableOpacity>
+
     </View>
     )
 }

@@ -7,6 +7,9 @@ var styles = StyleSheet.create({
         borderRadius: 5,
         fontSize: 26,
         textAlign: "center",
+    },
+    toastView:{
+        bottom: 0
     }
 })
 
