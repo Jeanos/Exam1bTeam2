@@ -12,7 +12,7 @@ container: {
 container2: {
 
     backgroundColor: "lightpink",
-    marginLeft: "60%",
+    marginLeft: "50%",
     height: "100%",
     alignItems: "center",
     justifyContent: "center"

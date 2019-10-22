@@ -7,18 +7,17 @@ function Right(){
     
     const [ChangeMode, setChangeMode] = useState(true);
 
-    var modeStyle = null;
+    var modeStyle = styles.container;
     var textStyle = null;
 
-    if(ChangeMode === true){
-        modeStyle = null;
+    if(ChangeMode === false){
+        modeStyle = styles.container2
         textStyle = null;
     }
 
-    
 
     return(
-        <View style={styles.container}>
+        <View style={modeStyle}>
             <Text> Normal </Text>
             <Switch
             value ={ChangeMode}
