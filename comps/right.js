@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, Switch} from 'react-native';
+import styles from '../styles/rightStyles';
 
 
 function Right(){
@@ -7,10 +8,11 @@ function Right(){
 
 
     return(
-        <View>
-            <Switch/>
+        <View style={styles.container}>
 
-
+            <Switch />
+            <Switch />
+            <Switch />
 
         </View>
     )

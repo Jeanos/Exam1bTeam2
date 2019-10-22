@@ -1,8 +1,11 @@
 import {StyleSheet} from 'react-native';
 
-const style = StyleSheet.create({
-right: {
-    flex:1
+const styles = StyleSheet.create({
+container: {
+
+    backgroundColor: "purple",
+    marginLeft: "70%",
+    height: "100%"
 }
 
 
@@ -12,4 +15,4 @@ right: {
 
 })
 
-export default style;
+export default styles;
