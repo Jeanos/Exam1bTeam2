@@ -6,6 +6,8 @@ function Main(){
     return(
         <View>
           <Left/>
+  
+    
         </View>
     );
 }

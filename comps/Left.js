@@ -14,8 +14,8 @@ import leftStyle from '../styles/leftStyle'
 function Left() {
   const [value, setNewValue] = useState('Your Image URL');
   const [showText, setShowText] = useState(false);
-  var newValue = null;
   var newText = null;
+  var DisplayText = null
   var BtnSetImage = (
     <Button
         title="Set an Image"
@@ -24,15 +24,15 @@ function Left() {
           }}
       />
   );
-
+  
   
   if (showText === true){
     if (newText == ''){
-      newText = (
-        <View>
-              <Text>Do not leave it Blank</Text>
-        </View>
-      )
+      DisplayText = (
+       <View>
+             <Text>Do not leave it Blank</Text>
+       </View>
+     );
     }else{
       newText = (
         <View>
@@ -53,13 +53,12 @@ function Left() {
     }
    
   }
-
-  
  
   return (
     <View style={leftStyle.app}>
         {BtnSetImage}
         {newText}
+        {DisplayText}
         <TextInput
           style={{ width: '100%', borderColor: 'gray', borderWidth: 1, color:'Blackew'}}
           onChangeText={(text) => setNewValue(text)}
