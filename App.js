@@ -9,12 +9,14 @@
 import React from 'react';
 import {View,Text} from 'react-native';
 import mainStyle from './styles/mainStyle';
+import Main from './comps/main'
+
 
 
 function App() {
   return (
     <View style={mainStyle.comp}>
-      <Text>App Goes Here</Text>
+      <Main />
     </View>
   );
 }
