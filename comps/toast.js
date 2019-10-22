@@ -7,7 +7,9 @@ import {
 import styles from '../styles/toastStyles';
 
 function Toast() {
-    var txt = ""
+    var txt = (
+    <Text>Toast</Text>
+    )
     if (txt="Toast"){
         <View>
             <TouchableOpacity>
